@@ -20,6 +20,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+import java.util.WeakHashMap;
 /**
  *  缓存管理类
  * @author Administrator
@@ -27,8 +28,8 @@ import java.util.Set;
  */
 public class CacheMgr {
 	
-	 private static Map cacheMap = new HashMap();
-	 private static Map cacheConfMap = new HashMap();
+	 private static Map cacheMap = new WeakHashMap();
+	 private static Map cacheConfMap = new WeakHashMap();
 	 
 	 private static CacheMgr cm = null;
 	 
